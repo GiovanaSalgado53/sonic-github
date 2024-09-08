@@ -1,3 +1,13 @@
+const modal = document.querySelector('.modal-container')
+
+function openModal() {
+  modal.classList.add('active')
+}
+
+function closeModal() {
+  modal.classList.remove('active')
+}
+
 function pesquisar(){
     // Seleciona a seção onde os resultados da pesquisa serão exibidos
     let section = document.getElementById("resultados-pesquisa"); 
@@ -31,9 +41,13 @@ function pesquisar(){
         resultados += `
             <div class="item-resultado"> <h2> <a href="#"           target="_blank" class="nome-personagem">${personagem.nome}</a>
             </h2>
-                <div class="descricao-img-personagem"> <p class="descricao-meta">${personagem.descricao} <br> <br>Primeira aparição: ${personagem.primeiroJogo} <br> <br>
-                Jogos: ${personagem.jogos} <br> <br>
-                Habilidades: ${personagem.habilidades}</p> <img class="personagens-img" src=${personagem.imagem} alt=""> </div> <br>
+                <div class="descricao-img-personagem"> <p 
+                <b>${personagem.fraseInicial}</b>
+                <br><br><br>
+                <class="descricao-meta">${personagem.descricao} 
+                <br><br>
+                ${personagem.dicas}
+                </p> <img class="personagens-img" src=${personagem.imagem} alt=""> </div> 
                 <a href=${personagem.maisInformacoes} target="_blank">Mais informações</a> </div>
         `
 
