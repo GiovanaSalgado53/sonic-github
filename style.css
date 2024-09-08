@@ -32,6 +32,13 @@ h1 {
     padding: 10px; /* Adiciona um espaço interno para melhor visualização da borda */
   }
 
+  h4{
+    font-family: "Nunito";
+    text-align: center;
+    padding-left: 14%;
+    margin-bottom: 20%;
+  }
+
 /* Estiliza as seções da página */
 section {
     display: flex; /* Usa Flexbox para layout */
@@ -42,7 +49,7 @@ section {
 
 /* Estiliza os inputs dentro das seções */
 section input {
-    width: 30rem; /* Largura dos inputs */
+    width: 28rem; /* Largura dos inputs */
     border: none; /* Remove a borda padrão */
     padding: 1rem; /* Espaçamento interno */
     border-radius: 0.5rem; /* Borda arredondada */
@@ -74,7 +81,7 @@ section button:hover {
     background-color: #bc980b; /* Muda a cor de fundo ao passar o mouse */
     box-shadow: 0 4px 8px rgba(87, 108, 30, 0.2); /* Adiciona uma sombra mais intensa */
     color: #032b55;
-    transition: all 0.3s ease-in-out; /* Adiciona uma transição de 0.3 segundos */
+    transition: all 0.3s; /* Adiciona uma transição de 0.3 segundos */
 }
 
 /* Estiliza a caixa de resultados da pesquisa */
@@ -148,13 +155,14 @@ footer {
     }
 
     section input {
-        width: 25rem; /* Largura dos inputs em telas menores */
+        width: 10rem; /* Largura dos inputs em telas menores */
         padding: 0.8rem; /* Espaçamento interno em telas menores */
     }
 
     .resultados-pesquisa {
         width: 40rem; /* Largura da caixa de resultados em telas menores */
         height: 40vh; /* Altura da caixa de resultados em telas menores */
+        
     }
 
     .item-resultado h2 {
@@ -223,7 +231,8 @@ footer {
 }
 
 .personagens-img{
-    width: 30%; 
+    width: 35%; 
+    
 }
 
 .descricao-img-personagem{
@@ -233,3 +242,90 @@ footer {
 /* Azul: #007bff (um azul vibrante)
 Amarelo: #ffcc00 (um amarelo brilhante)
 Vermelho: #cc0000 (um vermelho intenso) */
+
+.btnOpenModal {
+    padding: 0.8rem 1.2rem; /* Espaçamento interno do botão */
+    border: none; /* Remove a borda padrão */
+    border-radius: 0.5rem; /* Borda arredondada */
+    background-color: #0e65a7; /* Cor de fundo do botão */
+    color: #d3aa04; /* Cor do texto do botão */
+    font-size: 1rem; /* Tamanho da fonte */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    font-family: "Nunito";
+    margin-top: 4%;
+  }
+  
+  hr {
+    border: 0px;
+    border-top: 1px solid lightgray;
+  }
+  
+  .modal-container {
+    width: 100vw;
+    position: fixed;
+    top: 30px;
+    display: none;
+    z-index: 999;
+    justify-content: center;
+  }
+  
+  .modal {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    background-color: #0e65a7;
+    border-radius: 10px;
+    width: 20%;
+    font-family: "Nunito";
+  }
+  
+  .active {
+    display: flex;
+  }
+  
+  .active .modal {
+    animation: modal .4s;
+  }
+  
+  @keyframes modal {
+    from {
+      opacity: 0;
+      transform: translate3d(0, -60px, 0);
+    }
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  span {
+    margin: 10px auto;
+  }
+  
+  .btns {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .btns button {
+    font-size: medium;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .btnOK {
+   background-color: #d3aa04;
+   color: #007bff;
+  }
+
+  .btnOK:hover{
+    background-color: #eaf0fb;
+    color: #a7930e;
+  }
+  
+ 
+  
