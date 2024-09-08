@@ -14,19 +14,10 @@ Esta aplicação permite que você pesquise por personagens do jogo Sonic the He
 
 ## Como usar
 
-1. Clone este repositório ou baixe o código-fonte.
-2. Abra o arquivo `index.html` em um navegador.
-3. Digite o nome do personagem que você deseja pesquisar no campo de pesquisa.
-4. Clique no botão "Pesquisar".
-5. Os resultados da pesquisa serão exibidos abaixo.
-
-## Contribuições
-
-Contribuições são bem-vindas! Sinta-se à vontade para abrir um issue ou enviar um pull request.
-
-## Licença
-
-Este projeto está licenciado sob a [MIT License](https://opensource.org/licenses/MIT). 
+1. Digite o nome do personagem que você deseja pesquisar no campo de pesquisa.
+2. Aperte no botão "Me aperte!" para receber uma mensagem em pop up.
+3. Clique no botão "Pesquisar".
+4. Os resultados da pesquisa serão exibidos abaixo.
 
 ## Deploy 
 
@@ -35,3 +26,9 @@ Aqui está o link com o deploy do site pelo Vercel: https://sonic-github.vercel.
 ## Informações! 
 
 Esse site foi feito a partir da Imersão Dev da Alura em conjunto com a Gemini; uma das partes da imersão foi usar o Gemini diariamente, inclusive na criação do ReadMe.
+
+## Descrição 
+
+O projeto é focado para as crianças de até 12 anos, já que decidi utilizar cinco personagens do videogame Sonic the Hedgehog, sendo eles: o próprio Sonic, Tails, Amy, Knuckles e Shadow. 
+Cada um desses cinco personagens possui um tema sobre a importância do meio ambiente e dicas sobre como devemos cuidar delas, com um link que leva a sites que possuam mais informações caso necessário. 
+O site foi feito pensando para que as gerações futuras desde crianças saibam o quão importante é a natureza e sobre como fazemos parte dela. 
