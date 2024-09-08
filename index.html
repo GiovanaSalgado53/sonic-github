@@ -16,10 +16,35 @@
 
     <div class="container">
 
+        
+        
+      
+
     <main>
+        
         <section class="caixa-pergunta">
+
+
+            <!-- <h4 st>Sonic e seus amigos estão procurando novas maneiras de ajudar o meio ambiente! Coloque o nome do personagem e veja a dica que ele pode dar sobre cuidados ambientais. </h4> -->
         <input type="text" placeholder="Digite o nome do personagem:" id="campo-pesquisa">
         <button onclick="pesquisar()">Pesquisar</button>
+
+        <button class="btnOpenModal" onclick="openModal()">Me aperte!</button>
+
+        <div class="modal-container">
+          <div class="modal">
+            <h2>Dicas</h2>
+            <hr />
+            <span>
+                Sonic e seus amigos estão procurando novas maneiras de ajudar o meio ambiente! Coloque o nome do personagem e veja a dica que ele pode dar sobre cuidados ambientais.
+            </span>
+            <hr />
+            <div class="btns">
+              <button class="btnOK" onclick="closeModal()">OK</button>
+        
+            </div>
+          </div>
+        </div>
         </section>
     </main>
     
